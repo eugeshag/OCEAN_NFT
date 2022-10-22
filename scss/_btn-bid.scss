@@ -1,0 +1,22 @@
+@import "variables";
+
+.btn-bid{
+  @include btn;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  column-gap: 9.95px;
+  padding: 7.74px 9.95px;
+  &__text{
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6873px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+  &__img{
+    width: 24.32px;
+    height: 9.22px;
+  }
+}
