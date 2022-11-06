@@ -1,0 +1,346 @@
+.top {
+  padding-top: 220px;
+  @media screen and (min-width: 1400px){
+    .container{
+      max-width: 1380px;
+    }
+  }
+  &__row {
+
+  }
+  &__text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+  }
+
+  &__link {
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+  }
+
+  &__link-text {
+  }
+
+  &__link-img {
+  }
+
+  &__items{
+    margin-top: 47px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__item {
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__card {
+    padding: 47px 21px 21px 28px;
+    display: flex;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+    border: 2.88px solid;
+    border-image-source: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%);
+    border-image-slice: 1;
+    justify-content: space-between;
+  }
+
+  &__card-column1 {
+  }
+
+  &__card-title {
+    font-family: $Rajdhani;
+    font-weight: 700;
+    font-size: 23px;
+    color: $textColor;
+  }
+
+  &__card-profile {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__card-profile-img {
+    border-radius: 50%;
+    width: 37px;
+  }
+
+  &__card-profile-name {
+    margin-left: 4px;
+    font-family: $Rajdhani;
+    font-weight: 600;
+    font-size: 20.1601px;
+    color: $textColor;
+  }
+
+  &__card-profile-tick {
+    margin-left: 6px;
+    width: 16px;
+  }
+
+  &__card-price-label {
+    margin-top: 31px;
+    font-family: $Rajdhani;
+    font-weight: 600;
+    font-size: 14.4px;
+    color: rgba($textColor, 0.7);
+  }
+
+  &__card-price {
+    margin-left: -6px;
+    margin-top: 11px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__card-price-icon {
+    height: 25px;
+  }
+
+  &__card-price-eth {
+    margin-top: -1px;
+    margin-left: 2px;
+    font-family: $Orbitron;
+    font-weight: 700;
+    font-size: 12.7px;
+    color: $textColor;
+  }
+
+  &__card-price-usd {
+    margin-left: 7px;
+    font-family: $Rajdhani;
+    font-weight: 400;
+    font-size: 14.4001px;
+    color: $textColor;
+  }
+
+  &__card-column2 {
+  }
+
+  &__card-auction-label {
+    margin-left: 12px;
+    margin-top: 3px;
+    font-family: $Rajdhani;
+    font-weight: 600;
+    font-size: 14.4px;
+    color: rgba($textColor, 0.7);
+  }
+
+  &__card-timer {
+    margin-left: 12px;
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    column-gap: 21px;
+  }
+
+  &__card-timer-column {
+  }
+
+  &__card-timer-num {
+    font-family: $Rajdhani;
+    font-weight: 600;
+    font-size: 23.0401px;
+    color: $textColor;
+
+  }
+
+  &__card-timer-word {
+    margin-top: 4px;
+    font-family: $Rajdhani;
+    font-weight: 500;
+    font-size: 14.4px;
+    color: rgba($textColor, 0.7);
+  }
+
+  &__card-button {
+    padding: 9px 11px 10px 12px;
+    margin-top: 39px;
+    display: flex;
+    align-items: center;
+    border-width: 3px;
+    column-gap: 16px;
+  }
+
+  &__card-button-text {
+    font-family: $Rajdhani;
+    font-weight: 600;
+    font-size: 23.0401px;
+    line-height: 29px;
+    color: $textColor;
+  }
+
+  &__card-button-img {
+    margin-top: -2px;
+    height: 12px;
+  }
+  &__button{
+    display: none;
+  }
+  @media screen and (max-width: 991px) {
+    padding-top: 33px;
+  }
+  @media screen and (max-width: 767px) {
+    &__card-title {
+      font-size: 17.6873px;
+    }
+
+    &__card-profile-img {
+      height: 29px;
+    }
+
+    &__card-profile-name {
+      font-size: 15.4764px;
+    }
+
+
+    &__card-price-label {
+      font-size: 11.0546px;
+    }
+
+
+    &__card-price-eth {
+      font-size: 9.71776px;
+      line-height: 12px;
+    }
+
+    &__card-price-usd {
+      margin-top: 3px;
+      font-size: 11.0546px;
+    }
+
+    &__card-column2 {
+    }
+
+    &__card-auction-label {
+      font-size: 11.0546px;
+    }
+
+    &__card-timer-num {
+      font-size: 17.6873px;
+    }
+
+    &__card-timer-word {
+      font-size: 11.0546px;
+    }
+
+    &__card-button-text {
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    &__card-button-img {
+      height: 9.2px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    padding-top: 30px;
+    .container{
+      padding: 0 0 0 25px;
+    }
+    &__row{
+      padding: 0;
+    }
+    &__title{
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__link{
+      display: none;
+    }
+    &__items{
+      margin-top: 35px;
+    }
+    &__button{
+      margin-top: 39px;
+      display: inline-flex;
+      left: calc(50% - 12.5px);
+      transform: translateX(-50%);
+    }
+  }
+  @media screen and (max-width: 430px){
+    &__card{
+      padding: 30px 16px 13px 19px;
+    }
+    &__card-title {
+      font-size: 13.6px;
+    }
+    &__card-profile{
+      margin-top: 10px;
+    }
+    &__card-profile-img{
+      width: 26px;
+      height: 26px;
+    }
+    &__card-profile-name{
+      margin-left: 3px;
+      font-size: 11.9px;
+      line-height: 27px;
+    }
+    &__card-profile-tick{
+      margin-left: 14px;
+      width: 12px;
+    }
+    &__card-price-label{
+      margin-top: 21px;
+      font-size: 8.5px;
+    }
+    &__card-price{
+      margin-top: 8px;
+      margin-left: -4px;
+    }
+    &__card-price-icon{
+      height: 18px;
+    }
+    &__card-price-eth{
+      margin-left: 1px;
+      font-size: 7.5px;
+      line-height: 9px;
+    }
+    &__card-price-usd{
+      margin-top: 1px;
+      margin-left: 12px;
+      font-size: 8.5px;
+    }
+    &__card-auction-label{
+      margin-left: 9px;
+      margin-top: 2px;
+      font-size: 8.5px;
+    }
+    &__card-timer{
+      margin-left: 9px;
+      margin-top: 11px;
+      column-gap: 18px;
+    }
+    &__card-timer-num{
+      font-size: 13.6px;
+    }
+    &__card-timer-word{
+      margin-top: 5px;
+      font-size: 8.5px;
+    }
+    &__card-button{
+      column-gap: 20px;
+      padding: 7px 7px 10px 9px;
+      margin-top: 27px;
+      border-width: 2px;
+    }
+    &__card-button-text{
+      font-size: 13.6px;
+      line-height: 17px;
+    }
+    &__card-button-img{
+      margin-top: 1px;
+      width: 22px;
+    }
+  }
+}

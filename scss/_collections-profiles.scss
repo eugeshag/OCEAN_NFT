@@ -1,0 +1,232 @@
+.collections-profiles {
+  padding-top: 160px;
+  @media screen and (min-width: 1400px){
+    .container{
+      max-width: 1385px;
+    }
+  }
+  &__row {
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-left: 1px;
+  }
+
+  &__link {
+    margin-right: 8px;
+    column-gap: 17px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link-text {
+    font-family: $Orbitron;
+    font-weight: 700;
+    font-size: 26.5px;
+    color: $textColor;
+  }
+
+  &__link-img {
+  }
+
+  &__items {
+    margin-top: 48px;
+  }
+
+  &__item {
+    border: 3px solid;
+    border-image-source: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%);
+    border-image-slice: 1;
+  }
+
+  &__item-img {
+    width: 100%;
+  }
+
+  &__item-card {
+    padding-bottom: 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-card-img {
+    border-radius: 50%;
+    position: relative;
+    transform: translateY(-64%);
+  }
+
+  &__item-card-name {
+    margin-top: -91px;
+    font-family: $Rajdhani;
+    font-weight: 500;
+    font-size: 24.3px;
+    color: $textColor;
+
+  }
+
+  &__item-card-nickname {
+    position: relative;
+    margin-top: 8px;
+    font-family: $Rajdhani;
+    font-weight: 400;
+    font-size: 20.2px;
+    color: #FFB1EE;
+    &:after{
+      content: '';
+      top: 1px;
+      right: -22px;
+      position: absolute;
+      background: url("../img/tick.svg") no-repeat;
+      background-size: cover;
+      height: 17.2px;
+      width: calc(0.9166666 * 17.2px);
+    }
+  }
+
+  &__item-card-info {
+    margin-top: 37px;
+    display: flex;
+    column-gap: 65px;
+  }
+
+  &__item-card-info-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-card-info-num {
+    font-family: $Rajdhani;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31.7px;
+    color: $textColor;
+  }
+
+  &__item-card-info-word {
+    margin-top: 5px;
+    font-family: $Rajdhani;
+    font-weight: 500;
+    font-size: 19.8px;
+    color: rgba($textColor, 0.7);
+  }
+
+  &__item-card-button {
+    margin-left: 10px;
+    padding: 12px 92px 13px 92px;
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+    font-family: $Rajdhani;
+    font-weight: 600;
+    font-size: 19.9px;
+    line-height: 25px;
+    color: $textColor;
+    border: 2px solid;
+    border-image-source: $gradientBorder;
+    border-image-slice: 1;
+    background: $gradientBackground;
+  }
+  &__button{
+    display: none;
+  }
+  @media screen and (max-width: 575px) {
+    padding-top: 111px;
+    .container{
+      padding: 0 0 0 26px;
+    }
+    &__items{
+      margin-top: 30px;
+      margin-left: 0;
+    }
+    &__item{
+      border-width: 2px;
+    }
+    &__title{
+      font-size: 18px;
+      line-height: 23px;
+    }
+    &__link{
+      display: none;
+    }
+    &__button{
+      display: inline-flex;
+    }
+    &__items{
+    }
+    &__item-card{
+      padding-bottom: 25px;
+    }
+    &__item-card-img{
+      transform: translateY(-66%);
+      height: 112px;
+    }
+    &__item-card-name{
+      margin-top: -71px;
+      font-size: 16.8px;
+      line-height: 32px;
+    }
+    &__item-card-nickname{
+      margin-top: -1px;
+      font-size: 14px;
+      &:after{
+        height: 12.2px;
+        width: calc(0.9166666 * 12.2px);
+        right: -13px;
+      }
+    }
+    &__item-card-info{
+      position: relative;
+      left: -3px;
+      margin-top: 25px;
+      column-gap: 45px;
+    }
+    &__item-card-info-column{
+
+    }
+    &__item-card-info-num{
+      font-size: 22px;
+    }
+    &__item-card-info-word{
+      margin-top: 5px;
+      font-size: 13.7px;
+    }
+    &__item-card-button{
+      margin-left: 1px;
+      margin-top: 28px;
+      padding: 8px 62px 9px 62px;
+      font-size: 13.8px;
+      line-height: 18px;
+    }
+    &__button{
+      margin-top: 42px;
+      display: inline-flex;
+      left: calc(50% - 12.5px);
+      transform: translateX(-50%);
+      &::after{
+        background: #422B61;
+      }
+    }
+  }
+  @media screen and (max-width: 480px){
+    &__button{
+      &::after{
+        background: #2B205A;
+      }
+    }
+  }
+  @media screen and (max-width: 410px){
+    &__button{
+      &::after{
+        background: #23124A;
+      }
+    }
+  }
+}
