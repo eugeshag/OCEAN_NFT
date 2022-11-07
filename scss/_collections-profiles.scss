@@ -43,6 +43,8 @@
     border: 3px solid;
     border-image-source: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%);
     border-image-slice: 1;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+    backdrop-filter: blur(27.4188px);
   }
 
   &__item-img {
@@ -133,6 +135,7 @@
     border-image-source: $gradientBorder;
     border-image-slice: 1;
     background: $gradientBackground;
+    box-shadow: 0 4.81747px 116.824px rgba(255, 86, 246, 0.51);
   }
   &__button{
     display: none;

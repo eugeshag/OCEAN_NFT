@@ -1,4 +1,5 @@
 .main{
+  position: relative;
   padding-top: 114px;
   @media screen and (min-width: 1400px){
     .container{
@@ -50,7 +51,6 @@
     padding: 22px 34px 23px 69px;
     column-gap: 12px;
     clip-path: polygon(17% 0, 70% 0%, 100% 0, 100% 73%, 86% 100%, 30% 100%, 0 100%, 0 31%);
-    box-shadow: 0 4.42184px 107.23px rgba(255, 86, 246, 0.51);
     backdrop-filter: blur(106.124px);
     background: linear-gradient(92.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
     z-index: 22;
@@ -66,6 +66,7 @@
       top: 2px;
       left: 2px;
     }
+    box-shadow: 0 4.42184px 107.23px rgba(255, 86, 246, 0.51);
   }
 
   &__button-text {
@@ -293,6 +294,26 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__pay-item:nth-child(1){
+
+  }
+  &__pay-item:nth-child(2){
+    position: relative;
+    top: 4px;
+    left: -16px;
+
+  }
+  &__pay-item:nth-child(3){
+    position: relative;
+    top: 5px;
+    left: -13px;
+
+  }
+  &__pay-item:nth-child(4){
+    position: relative;
+    top: 11px;
+    left: -5px;
+  }
   @media screen and (max-width: 1399px) {
     &__title{
       max-width: 600px;
@@ -362,6 +383,18 @@
 
   }
   @media screen and (max-width: 575px) {
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 138px;
+      height: 138px;
+      left: 44px;
+      top: 661px;
+      background: #FF00C7;
+      filter: blur(76.5px);
+      z-index: 0;
+    }
     padding-top: 46px;
     .container{
       padding: 0 31px;
@@ -461,6 +494,8 @@
       top: -1px;
     }
     &__pay-item:nth-child(4){
+      left: 0;
+      top: 0;
       height: 17px;
     }
     &__images{
@@ -483,11 +518,12 @@
       transform: translateX(-50%);
     }
     &__card{
-      width: 326px;
+      width: 323px;
       height: 174px;
       top: -58px;
-      padding: 27px 1px 1px 24px;
+      padding: 27px 1px 1px 22px;
       column-gap: 52px;
+      background: url("../img/cardbg_mobile.png") no-repeat;
     }
 
     &__card-column1 {
